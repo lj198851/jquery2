@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Selecting Elements with jQuery</title>
+	<script src="jquery.min.js"></script>
+	<script>
+		$(function(){
+			/*var content = $("#content");
+				div
+			var span = $(".span-element");
+				element
+			*/
+			var listelements = $("li");
+			var i = 1;
+			listelements.each(function(){
+				console.log("Loop:" + i);
+				i++;
+			});
+		});
+	</script>
+</head>
+<body>
+<div class="division-container">Some text within a div which has a class</div>
+<div id="content">Some text within a div which has an ID attribute</div>
+<a href="#">A link</a>
+<a href="#" rel="dofollow">A second link</a>
+<ul>
+	<li>List Item1</li>
+	<li>List Item2</li>
+	<li>List Item3</li>
+</ul>
+<button>Button1</button>
+<span class="span-element">Span 1</span>
+</body>
+</html>
